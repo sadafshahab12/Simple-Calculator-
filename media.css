@@ -1,0 +1,29 @@
+@media only screen and (max-width: 320px) {
+  .calculator {
+    height: 128vmin;
+    width: 88vmin;
+  }
+
+  form .display input {
+    height: 14vmin;
+    font-size: 6vmin;
+  }
+  .btns {
+    display: flex;
+    gap: 2vmin;
+  }
+
+  .calculator form input:active {
+    background-color: rgba(255, 255, 255, 0.068);
+  }
+  .calculator form input {
+    width: 16vmin;
+    height: 17vmin;
+    font-size: 6vmin;
+    border-radius: 2.5vmin;
+  }
+
+  form input.equal {
+    width: 38vmin;
+  }
+}

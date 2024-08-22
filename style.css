@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #e3f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  background: #3a4452;
+  padding: 3vmin;
+  border-radius: 2vmin;
+}
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 10vmin;
+  height: 10vmin;
+  border-radius: 2vmin;
+  box-shadow: -1.5vmin -1vmin 1.5vmin rgba(225, 225, 225, 0.1),
+    0.75vmin 1vmin 1.5vmin rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 4vmin;
+  color: #fff;
+  cursor: pointer;
+  margin: 1.5vmin;
+}
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2vmin 0;
+}
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 5vmin;
+  padding-right: 2vmin;
+  box-shadow: none;
+  border-radius: 1vmin;
+  background-color: rgb(72, 70, 70);
+  transition: all 0.3s ease-in;
+}
+.calculator form input:active {
+  background-color: rgba(255, 255, 255, 0.068);
+}
+
+form input.equal {
+  width: 23vmin;
+}
+form input.operator {
+  color: #33ffd8;
+}
